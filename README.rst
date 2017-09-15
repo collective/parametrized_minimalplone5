@@ -1,10 +1,14 @@
 minimalplone5
 =============
 
-This is a minimal buildout configuration for installing the latest Plone 5.
+This is an example for parametrized zope instances.
 
-Currently, I recommend to install the development version with unreleased
-packages. Therefore, the buildout extends files from buildout.coredev on github.
+The instance created by this buildout script needs two environment variables
+and a directory that must be created by yourself::
+
+    $ export INSTANCE_PORT=12345
+    $ mkdir -p instance_$INSTANCE_PORT
+    $ CLIENT_HOME=$(PWD)/instance_$(INSTANCE_PORT) ./bin/instance fg
 
 
 Prerequisites
