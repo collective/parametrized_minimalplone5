@@ -8,7 +8,7 @@ and a directory that must be created by yourself::
 
     $ export INSTANCE_PORT=12345
     $ mkdir -p instance_$INSTANCE_PORT
-    $ CLIENT_HOME=$(PWD)/instance_$(INSTANCE_PORT) ./bin/instance fg
+    $ CLIENT_HOME=$(pwd)/instance_${INSTANCE_PORT} ./bin/instance fg
 
 
 Prerequisites
